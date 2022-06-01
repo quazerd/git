@@ -1,4 +1,5 @@
 JSON
+
  4. Создать внешний репозиторий c названием JSON.
  5. Клонировать репозиторий JSON на локальный компьютер.
 
@@ -38,6 +39,9 @@ JSON
  git push
 
  12. Создать файл preferences.json
+
+ touch preferences.json
+
  13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
 
  cat > preferences.json 
@@ -74,5 +78,188 @@ JSON
 
  git pull
 
+JSON
 
 
+XML
+
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+ git clone git@github.com:quazerd/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+ touch new.xml
+
+ 24. Добавить файл под гит.
+
+ git add new.xml 
+
+ 25. Закоммитить файл.
+
+ git commit -m 'added new.xml'
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+ cat > new.xml 
+<personalInformation>
+    <name>Levytsky Oleh Olehovych</name>
+    <age>28</age>                 
+    <numberOfPets>0</numberOfPets>
+    <futureSalary>3000$</futureSalary>
+</personalInformation>
+
+
+ 28. Отправить изменения на внешний репозиторий.
+
+ git commit -am 'added personal information'
+ git push
+
+
+ 29. Создать файл preferences.xml
+
+ touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+cat > preferences.xml 
+<preferences>
+    <favouriteMovie>Back to the future</favouriteMovie>
+    <favouriteTvShow>Scrubs</favouriteTvShow>
+    <favouriteFood>Philadelphia roll</favouriteFood>
+    <favouriteSeason>spring</favouriteSeason>
+    <countryToVisit>Japan</countryToVisit>
+</preferences>
+
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+cat > sklls.xml
+ <skills>
+        <skill1>Base Qa theory</skill1>
+        <skill2>Client-server architecture</skill2>
+        <skill3>HTTP</skill3>
+        <skill4>JSON, XML</skill4>
+        <skill5>API testing</skill5>
+        <skill6>Log processing</skill6>
+        <skill7>Traffic sniffing</skill7>
+        <skill8>Dev Tools</skill8>
+        <skill9>VPN</skill9>
+        <skill10>Mobile testing</skill10>
+        <skill11>iOS, Android features</skill11>
+        <skill12>Bash</skill12>
+        <skill13>SQL</skill13>
+        <skill14>Scrum</skill14>
+        <skill15>Python</skill15>
+        <skill16>Stress testing</skill16>
+</skills>
+
+ 32. Сделать коммит в одну строку.
+
+ git add . && git commit -m 'added preferences and skills'
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+ git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+ git pull
+
+ XML
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+
+ git clone git@github.com:quazerd/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+
+ touch new.txt
+
+ 4. Добавить файл под гит.
+
+ git add new.txt 
+
+ 5. Закоммитить файл.
+
+ git commit -m 'added new.txt'
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+ cat > new.txt
+name Levytskyi Oleh Olehovych
+age 28
+numberOfPets 0
+futureSalary 3000$                                       
+
+ 8. Отправить изменения на внешний репозиторий.
+
+ git commit -am 'added personal info' && git push
+
+ 9. Создать файл preferences.txt
+
+ touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+
+ cat > preferences.txt 
+favourite movie Back to the future
+favourite tv show Scrubs
+favourite food Philadelphia roll
+favourite season spring
+country to visit Japan
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+ cat > sklls.txt
+skills
+Base QA theory
+Client-server architecture
+HTTP
+JSON, XML
+API testing
+Log processing
+Traffic sniffing
+Dev Tools
+VPN
+Mobile testing
+iOS, Android features
+Bash
+SQL
+Scrum
+Python
+Stress testing
+
+ 12. Сделать коммит в одну строку.
+
+ git add . && git commit -m 'added preferences and skill info'
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+
+ git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+ git pull
+
+ 
